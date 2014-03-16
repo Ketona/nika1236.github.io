@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>შეიქმენი განწყობა</title>
+    <meta charset="utf-8"/>
+    <link type="text/css" rel="stylesheet" href="css.css"/>
+
+</head>
+<body>
+<div id="NotChrome">ჯერჯერობით დიზაინი მორგებულია Google Chrome_ზე გთხოვთ გადმოწეროთ ამ ბრაუზერის ბოლო ვერსია. </div>
+<div id="DivOfVideo" style="z-index: 100000; width: 100%; height: 100%; position: absolute; display: none; overflow: hidden; -webkit-transition: all 0.4s ease-out;
+">
+    <div id="Gamosartveli"><img src="pictures/x.png"> </div>
+    <video id="VideoPlayer" autoplay muted style="z-index: 100001; width: 100%; background-color: black" loop ></video>
+    <audio id="VideoAudio" autoplay loop></audio>
+</div>
+
+<div id="ToolBox">
+    <div id="MenuItems"></div>
+    <div id="InsideBox"><center><img src="meniu.png" width="55%" style="margin: 10px" ></center></div>
+</div>
+
+<div id="Container">
+<div class='box-scene' onclick="ShowVideo('Forest.mp4')" onmouseover="HoverBox('Forest.mp4.mp3')" onmouseout="MousOut()">
+    <div class='box'>
+        <div class='front face'>
+            <img src='pictures/tye.jpg' alt='აქ შეიძლება ყოფილიყო თქვენი ტყის სურათი' height="100%" >
+        </div>
+        <div class="side face">
+            <img src="pictures/tye2.jpg" alt="აქ შეიძლება ყოფილიყო თქვენი ტყის სურათი" height="100%"/>
+        </div>
+    </div>
+</div>
+<div class='box-scene'' onclick="ShowVideo('Snow.mp4')" onmouseover="HoverBox('Snow.mp4.mp3')" onmouseout="MousOut()">
+    <div class='box'>
+        <div class='front face'>
+            <img src='pictures/tovli2.jpg' alt='აქ შეიძლება ყოფილიყო თქვენი თოვლის სურათი' width="100%"/>
+        </div>
+        <div class="side face">
+            <img src="pictures/tovli.jpg" alt="აქ შეიძლება ყოფილიყო თქვენი თოვლის სურათი" width="100%"/>
+        </div>
+    </div>
+</div>
+<div class='box-scene'  onclick="ShowVideo('Rain.mp4')"  onmouseover="HoverBox('Rain.mp4.mp3')" onmouseout="MousOut()">
+    <div class='box'>
+        <div class='front face'>
+            <img src='pictures/qolga.jpg' alt='აქ შეიძლება ყოფილიყო თქვენი წვიმის სურათი' width="100%"/>
+        </div>
+        <div class="side face">
+            <img src="pictures/qolga2.jpg" alt="აქ შეიძლება ყოფილიყო თქვენი წვიმის სურათი" width="100%"/>
+        </div>
+    </div>
+</div>
+<div class='box-scene' onclick="ShowVideo('Buda.mp4')" onmouseover="HoverBox('Buda.mp4.mp3')" onmouseout="MousOut()">
+    <div class='box'>
+        <div class='front face'>
+            <img src='pictures/buda.png' alt='აქ შეიძლება ყოფილიყო თქვენი ცეცხლის სურათი' width="100%"/>
+        </div>
+        <div class="side face">
+            <img src="pictures/buda2.png" alt="აქ შეიძლება ყოფილიყო თქვენი ცეცხლის სურათი" width="100%"/>
+        </div>
+    </div>
+</div>
+
+<div class='box-scene' onclick="ShowVideo('Game.mp4')" onmouseover="HoverBox('Game.mp4.mp3')" onmouseout="MousOut()">
+        <div class='box'>
+            <div class='front face'>
+                <img src='pictures/game.jpg' alt='აქ შეიძლება ყოფილიყო თქვენი ცეცხლის სურათი' width="100%"/>
+            </div>
+            <div class="side face">
+                <img src="pictures/game2.jpg" alt="აქ შეიძლება ყოფილიყო თქვენი ცეცხლის სურათი" width="100%"/>
+            </div>
+        </div>
+    </div>
+    <div class='box-scene' onclick="ShowVideo('koconi.mp4')" onmouseover="HoverBox('koconi.mp4.mp3')" onmouseout="MousOut()">
+        <div class='box'>
+            <div class='front face'>
+                <img src='pictures/cecxli4.jpg' alt='აქ შეიძლება ყოფილიყო თქვენი ცეცხლის სურათი' width="100%"/>
+            </div>
+            <div class="side face">
+                <img src="pictures/cecxli2.jpg" alt="აქ შეიძლება ყოფილიყო თქვენი ცეცხლის სურათი" width="100%"/>
+            </div>
+        </div>
+    </div>
+    <div class='box-scene' onclick="ShowVideo('Train.mp4')" onmouseover="HoverBox('Train.mp4.mp3')" onmouseout="MousOut()">
+        <div class='box'>
+            <div class='front face'>
+                <img src='pictures/matarebeli.jpg' alt='აქ შეიძლება ყოფილიყო თქვენი ცეცხლის სურათი' width="100%"/>
+            </div>
+            <div class="side face">
+                <img src="pictures/matarebeli2.jpg" alt="აქ შეიძლება ყოფილიყო თქვენი ცეცხლის სურათი" width="100%"/>
+            </div>
+        </div>
+    </div>
+<div class='box-scene' onclick="ShowVideo('Sea.mp4')" onmouseover="HoverBox('Sea.mp4.mp3')" onmouseout="MousOut()">
+    <div class='box'>
+        <div class='front face'>
+            <img src='pictures/zgva.jpg' alt='აქ შეიძლება ყოფილიყო თქვენი ცეცხლის სურათი' width="100%"/>
+        </div>
+        <div class="side face">
+            <img src="pictures/zgva2.jpg" alt="აქ შეიძლება ყოფილიყო თქვენი ცეცხლის სურათი" width="100%"/>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+<audio id="Player1" loop></audio>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="pictureAutoCorrect.js"></script>
+</body>
+</html>

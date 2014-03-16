@@ -1,0 +1,100 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+}
+
+#ToolBox{
+    background-color:#1e1e1e ;
+    width: 13.5%;
+    left: -10%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: all 0.4s ease-out;
+}
+
+#InsideBox {
+    background-color:#1e1e1e ;
+    width: 26%;
+    left: 74%;
+    height: 100%;
+    position: absolute;
+    }
+
+
+#ToolBox:hover {
+    left: 0px;
+}
+#Container {
+    width: 96.5%;
+    height: 100%;
+    left: 3.5%;
+    background-color: #1e1e1e;
+    float: right;
+    -webkit-transition: all 0.4s ease-out;
+    position: absolute;
+}
+#ToolBox:hover + #Container{
+    left:13.5%;
+}
+
+
+
+
+
+.box-scene {
+    -webkit-perspective: 700;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    z-index: 999;
+    padding: 0;
+     float: left;
+}
+.box-scene:hover  {
+    cursor: hand;
+
+}
+.box-scene:hover .box {
+    -webkit-transform: rotateX(90deg);
+}
+.box {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 0.4s ease-out;
+    -webkit-transform-origin: 150px 150px -150px;
+    /* float: left; */
+    margin: 0px;
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: visible;
+    -webkit-transform-origin: 0 0;
+}
+.front {
+    -webkit-transform: rotateY(0deg);
+    z-index: 2;
+    background: #d9d9d9;
+}
+.side {
+    background: #9dcc78;
+    width: 300px;
+    -webkit-transform: rotateX(-90deg);
+    z-index: 1;
+    left: 0px;
+    top: 300px;
+}
+
+#Gamosartveli {
+    left: 90%;
+    position: absolute;
+    z-index: 10000001;
+    top:10px;
+    background-color: white;
+}
